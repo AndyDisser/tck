@@ -23,10 +23,8 @@
             <tbody>
                 {% for angebot in einzelbuchung %}
                 <tr>
-                    {{ angebot.name }}
-                </tr>
-                <tr>
-                    {{ angebot.price }}
+                    <td>{{ angebot.name }}</td>
+                    <td>{{ angebot.price }}</td>
                 </tr>
                 {% endfor %}
             </tbody>
@@ -40,18 +38,38 @@
             <thead>
                 <tr>
                     <th>Training</th>
-                </tr>
-                <tr>
                     <th>Preis</th>
                 </tr>
             </thead>
             <tbody>
                 {% for angebot in abo %}
                 <tr>
-                    {{ angebot.name }}
+                    <td>{{ angebot.name }}</td>
+                    <td>{{ angebot.price }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+
+        <br><br>
+
+        {% if camp %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Training</th>
+                    <th>Preis</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for angebot in camp %}
+                <tr>
+                    <td>{{ angebot.name }}</td>
+                    <td>{{ angebot.price }}</td>
                 </tr>
                 <tr>
-                    {{ angebot.price }}
+                    <td colspan="2">{{ angebot.add_info }}</td>
                 </tr>
                 {% endfor %}
             </tbody>

@@ -7,5 +7,6 @@ urlpatterns = [
     path('', views.index, name="index"),
     path('mannschaften/', views.mannschaften, name="mannschaften"),
     path('mannschaften/<str:mannschaft>', views.mannschaft, name="mannschaft"),
-    path('training/', views.training, name="training")
+    path('training/', views.training, name="training"),
+    path('feldherrnhuegel/', views.feldherrnhuegel, name="feldherrnhuegel")
 ]

@@ -21,9 +21,14 @@ def mannschaft(request, mannschaft):
 
 def training(request):
     context = {
-        einzelbuchung = Trainingsangebot.objects.filter(category="Einzeln")
-        abo = Trainingsangebot.objects.filter(category="Abo")
-        camp = Trainingsangebot.objects.filter(category="Camp")
+        "einzelbuchung" : Trainingsangebot.objects.filter(category="Einzeln").all(),
+        "abo" : Trainingsangebot.objects.filter(category="Abo").all(),
+        "camp" : Trainingsangebot.objects.filter(category="Camp").all()
     }
-    print(f"\n\n{Trainingsangebot}\n{einzelbuchung}\n{abo}\n{camp}\n\n")
     return render(request, "home/training.html", context)
+
+def feldherrnhuegel(request):
+    context = {
+
+    }
+    return render(request, "home/feldherrnhuegel.html", context)
