@@ -1,0 +1,61 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %}Training{% endblock %}
+
+{% block nav %}
+{% endblock%}
+
+{% block body %}
+    <div class="container jumbotron">
+        <h1>{{ Trainingsangebot }}</h1>
+        <br><br>
+        {% if einzelbuchung %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Training</th>
+                </tr>
+                <tr>
+                    <th>Preis</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for angebot in einzelbuchung %}
+                <tr>
+                    {{ angebot.name }}
+                </tr>
+                <tr>
+                    {{ angebot.price }}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+
+        <br><br>
+
+        {% if abo %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Training</th>
+                </tr>
+                <tr>
+                    <th>Preis</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for angebot in abo %}
+                <tr>
+                    {{ angebot.name }}
+                </tr>
+                <tr>
+                    {{ angebot.price }}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+    </div>
+{% endblock %}

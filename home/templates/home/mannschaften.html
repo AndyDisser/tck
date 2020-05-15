@@ -1,0 +1,62 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %}
+    Mannschaftsübersicht TC Kelsterbach
+{% endblock %}
+
+{% block body %}
+<br><br>
+<div class="container-fluid jumbotron">
+    <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 m-4">
+            <div class="card shadow m-3 mx-auto" style="width: 18rem;">
+                <img src="{% static 'home/images/U10.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">U10</h5>
+                    <a href="{% url 'home:mannschaft' 'u10' %}" class="btn btn-primary">Mannschaftsprofil</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 m-4">
+            <div class="card shadow m-3 mx-auto" style="width: 18rem;">
+                <img src="{% static 'home/images/U10.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">U10</h5>
+                    <a href="https://htv.liga.nu/cgi-bin/WebObjects/nuLigaTENDE.woa/wa/teamPortrait?team=2451801&championship=TB+Darmstadt+20" class="btn btn-primary">Mannschaftsprofil</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 m-4">
+            <div class="card shadow m-3 mx-auto" style="width: 18rem;">
+                <img src="{% static 'home/images/U10.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">U10</h5>
+                    <a href="{% url 'home:mannschaft' 'u10' %}" class="btn btn-primary">Mannschaftsprofil</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 m-4">
+            <div class="card shadow m-3 mx-auto" style="width: 18rem;">
+                <img src="{% static 'home/images/U10.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">U10</h5>
+                    <a href="{% url 'home:mannschaft' 'u10' %}" class="btn btn-primary">Mannschaftsprofil</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 m-4">
+            <div class="card shadow m-3 mx-auto" style="width: 18rem;">
+                <img src="{% static 'home/images/U10.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">U10</h5>
+                    <a href="{% url 'home:mannschaft' 'u10' %}" class="btn btn-primary">Mannschaftsprofil</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="jumbotron">
+
+</div>
+{% endblock %}
